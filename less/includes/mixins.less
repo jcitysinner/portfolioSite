@@ -1,0 +1,21 @@
+@import 'brand.less';
+.box-sizing () {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+  box-sizing:         border-box;
+}
+
+// Defaults to 5px radius
+.border-radius () {
+  -webkit-border-radius: 15px;
+  -moz-border-radius:    15px;
+  border-radius:         15px;
+  border: 1px solid @black;
+}
+
+.widthfloat (@width) {
+	float: left;
+	display: inline-block;
+	width: @width;
+	margin: 0 (@width * 0.055);
+}

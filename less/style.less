@@ -1,0 +1,645 @@
+@import 'includes/brand.less';
+@import 'includes/mixins.less';
+
+* {
+  .box-sizing;
+}
+
+body {
+  font-family: @bodyfont;
+  font-size: 1em;
+  color: @black;
+  margin: 0;
+}
+h1, h2, h3, h4{
+	font-weight: 300;
+}
+a{
+	color: @blue;
+	word-wrap: break-word
+}
+div.wrapper{
+	width: 100%;
+	max-width: 1120px;
+	padding: 25px 0;
+	margin: auto;
+	overflow: hidden;
+	header.mainHeader{
+		overflow: hidden;
+		position: relative;
+		img.logo{
+			width: 180px;
+			float: left;
+		}
+		div.social{
+			width: 100%;
+			text-align: right;
+			
+			a{
+				img{
+					width: 45px;
+					display: inline-block;
+					border-radius: 5px;
+					margin-left: 15px;
+					transition: all 0.2s;
+				}
+			}
+			a:hover img{
+				margin-bottom: -5px;
+			} 
+		}
+		nav#mainNav{
+			width: 	82%;
+			float: right;
+			text-align: right;
+			vertical-align: bottom;
+			position:absolute; 
+			bottom:0; 
+			right:0; 
+			margin-bottom: -5px;
+			div.menu-menu-1-container ul {
+				padding: 0;
+				margin: 0;
+				li{
+					display: inline-block;
+					margin-left: 30px;
+					font-size: 22px;
+					a{
+						text-decoration: none;
+						color: @black;
+						text-transform: uppercase;
+						transition: all 0.3s;
+					}
+					a:hover{
+						color: @blue;
+					}
+				}
+			}
+		}
+
+	}
+	section.main{
+		div.bannerBlack{
+			width: 100%;
+			border: solid 25px @black;
+			margin-top: 50px;
+			div.bannerBlue{
+				width: 100%;
+				border: solid 25px @blue;
+				div.bannerBlack2{
+					width: 100%;
+					border: solid 25px @black;
+					text-align: center;
+					padding: 25px 15px;
+					h2{
+						font-weight: 300;
+						font-size: 32px;
+						span{
+							font-weight: 600;
+						}
+					}
+				}
+			}
+		}
+		h1{
+			margin: 25px 0;
+			font-size: 32px;
+		}
+		div.blog{
+			width:48%;
+			margin-right: 2%;
+			margin-top: 50px;
+			float: left;
+			border: 1px solid @black;
+			padding: 10px;
+			a{
+				text-decoration: none;
+			}
+			h3{
+				font-size: 24px;
+				margin-top: 0px;
+				margin-left: 0px;
+			}
+			article{
+				border-top: 1px solid @black;
+				overflow: hidden;
+				padding-bottom: 15px;
+			}
+			h4{
+				font-style: italic;	
+				font-size: 18px;
+				margin: 15px 0;
+			}
+			a.readMore{
+				float: right;
+			}
+		}
+		div.twitter{
+			width:48%;
+			margin-left: 2%;
+			margin-top: 50px;
+			float: right;
+			text-align: right;
+		}
+		div.mainContent{
+			.border-radius();
+			padding: 0 25px 25px;
+			overflow: hidden;
+			font-size: 20px;
+			width: 100%;
+			h2{
+				text-align: center;
+				font-size: 32px;
+				margin: 50px 0;
+				span{
+					font-weight: 600;
+					font-style: italic;
+				}
+			}
+			div.leftColumn.mainText{
+				width: 65%;
+				float:left;
+				overflow: hidden;
+				p{
+					margin: 0;
+				}
+				div.leftList{
+					width: 50%;
+					float: left;
+					margin-top: 25px;	
+				}
+				div.rightList{
+					width: 50%;
+					float: left;
+					margin-top: 25px;	
+				}
+			}
+			div.rightColumn.image{
+				width:30%;
+				float: right;
+				img{
+					width: 100%;
+					.border-radius();
+				}
+			}
+			div.leftColumn.threeCol{
+				width: 40%;
+				float: left;
+				margin-left: 8%;
+				h3{
+					margin-top: 0;
+				}
+			}
+			div.rightColumn.threeCol{
+				width: 40%;
+				float: right;
+				margin-right: 8%;
+				overflow: hidden;
+				h3{
+					margin-top: 0;
+				}
+				h4{
+					margin: 0px;
+				}
+				div.socialLinks{
+					overflow: hidden;
+					a{ 
+						float:left;
+						width: 12.5%;
+						height: 100%;
+						img{
+							width: 100%;
+							border-radius:5px;
+							
+						}
+					}
+					div.links{
+						float: left;
+						margin-left: 1%;
+						margin-bottom: 50px;
+						width: 80%;
+						a{
+							width: 100%;
+						}
+					}
+				}
+			}
+			div.detailContent{
+			width: 80%;
+			margin: auto;
+		}
+			div.detailHero{
+				font-size: 0px;
+				.border-radius();
+				img{
+					width: 100%;
+					height: auto;
+					border-radius: 15px;
+				}
+			}
+		}
+		
+		div.detailsWhole{
+			border: 1px solid black;
+			margin: 25px 0;
+			overflow: hidden;
+			.border-radius();
+			div.detailsImageLeft{
+				background-color: @black;
+				img{
+					border-top-left-radius: 14px;
+					border-bottom-left-radius: 14px;
+					border-right: solid 1px black;
+					width: 20%;
+					height: auto;
+					float: left;
+				}
+			} 
+			div.detailsImageRight {
+				float: right;
+				width: 20%;
+				img{
+					border-top-right-radius: 14px;
+					border-bottom-right-radius: 14px;
+					border-left: solid 1px black;
+					width: 100%;
+					height: auto;
+					float: right;
+				}
+			}
+			div.details{
+				float: left;
+				margin-left: 1%;
+				width: 78%;
+				h3{
+					margin-top: 10px;
+				}
+			}
+		}
+		aside#mainSidebar{
+			width:25%;
+			float: right;
+			border-radius: 15px;
+			padding: 1%;
+			background-color: @blue;
+			li{
+				list-style: none;
+			}
+			ul{
+				padding: 0;
+			}
+			a{
+				color: @black;
+			}
+		}
+		div.blogContent{
+			width: 70%;
+			
+			float: left;
+
+			h1.theTitle{
+				margin-top: 0;
+			}
+			article{
+				.border-radius();
+				padding:1%;
+				margin-bottom: 25px;
+			}
+		}
+		div.blogPost{
+			width: 70%;
+			
+			float: left;
+
+			h1.theTitle{
+				margin-top: 0;
+			}
+			img{
+				max-width: 100%;
+				height: auto;
+			}
+		}
+		ul#menu-blog{
+			list-style: none;
+			padding: 0;
+			background-color: @blue;
+			border-radius: 10px;
+			padding: 5px;
+			li{
+				display: inline-block;
+				margin-right: 15px;
+				padding: 3px;
+				a{
+					color: white;
+					text-decoration: none;
+					padding: 3px;
+					transition: all 0.3s;
+					border-radius: 10px;
+					padding-right: 5px;
+				}
+				a:hover{
+					color: @blue;
+					padding-left: 15px;
+					background-color: white;
+					
+				}
+			}
+		}
+	}
+	
+}
+footer{
+	text-align: center;
+	font-size: 14px;
+	p#quotes{
+		width: 320px;
+		margin: auto;
+		font-size: 10px;
+		padding-bottom:15px;
+	}
+	div.social{
+			width: 100%;
+			a{
+				img{
+					width: 45px;
+					display: inline-block;
+					border-radius: 5px;
+					margin-left: 15px;
+					transition: all 0.2s;
+				}
+			}
+			a:hover img{
+				margin-bottom: -5px;
+			} 
+		}
+}
+.mobileOnly{
+	display: none;
+}
+.alignleft{
+	float: left;
+	.border-radius();
+}
+.alignright{
+	float: right;
+	.border-radius();
+}
+@media only screen and (max-width: 1150px){
+	div.wrapper{
+		padding:15px;
+	}
+}
+@media only screen and (max-width: 800px){
+	div.wrapper{
+		padding: 15px;
+		header.mainHeader{
+			nav#mainNav{
+				width: 100%;
+				text-align: center;
+				position: static;
+				padding-top: 20px;
+				div.menu-menu-1-container ul li{
+					margin: 5px;
+					padding: 5px;
+				}
+			}
+		}
+		section.main{
+			div.bannerBlack{
+				width: 100%;
+				border: solid 10px @black;
+				margin-top: 25px;
+				div.bannerBlue{
+					width: 100%;
+					border: solid 10px @blue;
+					div.bannerBlack2{
+						width: 100%;
+						border: solid 10px @black;
+						text-align: center;
+						padding: 15px 5px;
+						h2{
+							font-weight: 300;
+							font-size: 32px;
+							span{
+								font-weight: 600;
+							}
+						}
+					}
+				}
+			}
+			div.blog{
+				width:100%;
+				margin:0;
+				margin-top: 25px;
+				float: none;
+				border: 1px solid @black;
+				padding: 10px;
+			}
+			div.twitter{
+				width:100%;
+				margin: 0;
+				margin-top: 25px;
+				float: none;
+				text-align: center;
+			}
+			
+			div.mainContent{
+				div.leftColumn.mainText{
+					width: 100%;
+					
+				}
+				div.rightColumn.image{
+					display: none;
+				}
+
+				div.leftColumn.threeCol{
+					width:100%;
+					margin-left: 0;
+				}
+				div.rightColumn.threeCol{
+					width:100%;
+					margin-right: 0;
+				}
+
+			}
+			div.detailsWhole{
+				div.detailsImageLeft, div.detailsImageRight{
+					width: 30%;
+					
+					img{
+						width: 100%;
+
+					}
+				}
+				div.details{
+					width: 68%;
+					
+					h3{
+						font-size: 18px;
+					}
+					p{
+						font-size: 14px;
+					}
+				}
+			}
+			ul.mobileMenu{
+				display: block;
+				width: 100%;
+				padding: 0;
+				text-align: center;
+				li{
+					display: inline-block;
+					width: 49%;
+					background-color: @blue;
+					text-align: center;
+					padding: 5px 0;
+					border-radius: 10px;
+					a{
+						color: white;
+						text-decoration: none;
+					}
+					
+				}
+			}
+			div.menu-blog-container{
+				display: none;
+				text-align: center;
+			}
+			aside#mainSidebar{
+				display: none;
+				position: absolute;
+				right: 15px;
+				width: 50%;
+			}
+			div.blogContent{
+				width: 100%;
+			}
+			div.blogPost{
+				width: 100%;
+			}
+		}
+	}
+
+}
+@media only screen and (max-width: 700px){
+	div.wrapper{
+		section.main{
+			div.detailsWhole{
+				div.detailsImageLeft, div.detailsImageRight{
+					width: 40%;
+				}
+				div.details{
+					width:50%;
+				}
+			} 
+			
+		}
+	}
+	
+}
+@media only screen and (max-width: 580px){
+	.mobileOnly{
+		display: block;
+	}
+	img.navButton{
+		width: 44px;
+		 float: right;
+		 margin-top: 25px;
+	}
+	div.wrapper{
+		header.mainHeader{
+			padding: 0 15px;
+			overflow: hidden;
+			div.social{
+				display: none;
+				a:hover img{
+					margin-bottom: -5px;
+				} 
+			}
+			nav#mainNav{
+				display: none;
+				width: 	100%;
+				float: none;
+				text-align: center;
+				vertical-align: auto;
+				position: static;  
+				margin-bottom: 0px;
+				clear: both;
+				
+				padding-top: 15px;
+				clear: both;
+				div.menu-menu-1-container ul {
+					border-top: 1px solid @black;
+					border-bottom: 1px solid @black;
+					li.menu-item{
+						display: block;
+						padding: 10px 0;
+					}
+				}
+			}
+
+
+		}
+		section.main{
+			div.mainContent{
+				div.leftColumn.mainText{
+					div.leftList, div.RightList{
+						float: none;
+						width: 100%;
+					}
+				}
+				 
+			}
+			div.detailsWhole{
+				padding: 10px;
+
+				div.detailsImageLeft, div.detailsImageRight{
+					display: none; 
+				}
+				div.details{
+					width:100%;
+					p{
+						font-size: 16px;
+					}
+				}
+			}
+			div.menu-blog-container{
+				display: none;
+				text-align: center;
+				ul#menu-blog li.menu-item{
+					text-align: center;
+					display: block;
+					padding: 10px 0;
+					a{
+						font-size: 18px;
+					}
+				}
+			}
+			aside#mainSidebar{
+				width: 94%;
+			}
+		}
+	}
+	.alignleft{
+		width:50%;
+		height: auto;
+		margin: auto;
+	}
+	.alignright{
+		width:50%;
+		height: auto;
+		margin: auto;
+	}
+}
+@media only screen and (max-width: 400px){
+	.alignleft{
+		width:100%;
+		height: auto;
+		margin: auto;
+	}
+	.alignright{
+		width:100%;
+		height: auto;
+		margin: 10px auto;
+	}
+}

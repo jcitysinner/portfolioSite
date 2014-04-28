@@ -1,0 +1,617 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 1em;
+  color: #333333;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 300;
+}
+a {
+  color: #0597cc;
+  word-wrap: break-word;
+}
+div.wrapper {
+  width: 100%;
+  max-width: 1120px;
+  padding: 25px 0;
+  margin: auto;
+  overflow: hidden;
+}
+div.wrapper header.mainHeader {
+  overflow: hidden;
+  position: relative;
+}
+div.wrapper header.mainHeader img.logo {
+  width: 180px;
+  float: left;
+}
+div.wrapper header.mainHeader div.social {
+  width: 100%;
+  text-align: right;
+}
+div.wrapper header.mainHeader div.social a img {
+  width: 45px;
+  display: inline-block;
+  border-radius: 5px;
+  margin-left: 15px;
+  transition: all 0.2s;
+}
+div.wrapper header.mainHeader div.social a:hover img {
+  margin-bottom: -5px;
+}
+div.wrapper header.mainHeader nav#mainNav {
+  width: 82%;
+  float: right;
+  text-align: right;
+  vertical-align: bottom;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: -5px;
+}
+div.wrapper header.mainHeader nav#mainNav div.menu-menu-1-container ul {
+  padding: 0;
+  margin: 0;
+}
+div.wrapper header.mainHeader nav#mainNav div.menu-menu-1-container ul li {
+  display: inline-block;
+  margin-left: 30px;
+  font-size: 22px;
+}
+div.wrapper header.mainHeader nav#mainNav div.menu-menu-1-container ul li a {
+  text-decoration: none;
+  color: #333333;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+div.wrapper header.mainHeader nav#mainNav div.menu-menu-1-container ul li a:hover {
+  color: #0597cc;
+}
+div.wrapper section.main div.bannerBlack {
+  width: 100%;
+  border: solid 25px #333333;
+  margin-top: 50px;
+}
+div.wrapper section.main div.bannerBlack div.bannerBlue {
+  width: 100%;
+  border: solid 25px #0597cc;
+}
+div.wrapper section.main div.bannerBlack div.bannerBlue div.bannerBlack2 {
+  width: 100%;
+  border: solid 25px #333333;
+  text-align: center;
+  padding: 25px 15px;
+}
+div.wrapper section.main div.bannerBlack div.bannerBlue div.bannerBlack2 h2 {
+  font-weight: 300;
+  font-size: 32px;
+}
+div.wrapper section.main div.bannerBlack div.bannerBlue div.bannerBlack2 h2 span {
+  font-weight: 600;
+}
+div.wrapper section.main h1 {
+  margin: 25px 0;
+  font-size: 32px;
+}
+div.wrapper section.main div.blog {
+  width: 48%;
+  margin-right: 2%;
+  margin-top: 50px;
+  float: left;
+  border: 1px solid #333333;
+  padding: 10px;
+}
+div.wrapper section.main div.blog a {
+  text-decoration: none;
+}
+div.wrapper section.main div.blog h3 {
+  font-size: 24px;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+div.wrapper section.main div.blog article {
+  border-top: 1px solid #333333;
+  overflow: hidden;
+  padding-bottom: 15px;
+}
+div.wrapper section.main div.blog h4 {
+  font-style: italic;
+  font-size: 18px;
+  margin: 15px 0;
+}
+div.wrapper section.main div.blog a.readMore {
+  float: right;
+}
+div.wrapper section.main div.twitter {
+  width: 48%;
+  margin-left: 2%;
+  margin-top: 50px;
+  float: right;
+  text-align: right;
+}
+div.wrapper section.main div.mainContent {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  border: 1px solid #333333;
+  padding: 0 25px 25px;
+  overflow: hidden;
+  font-size: 20px;
+  width: 100%;
+}
+div.wrapper section.main div.mainContent h2 {
+  text-align: center;
+  font-size: 32px;
+  margin: 50px 0;
+}
+div.wrapper section.main div.mainContent h2 span {
+  font-weight: 600;
+  font-style: italic;
+}
+div.wrapper section.main div.mainContent div.leftColumn.mainText {
+  width: 65%;
+  float: left;
+  overflow: hidden;
+}
+div.wrapper section.main div.mainContent div.leftColumn.mainText p {
+  margin: 0;
+}
+div.wrapper section.main div.mainContent div.leftColumn.mainText div.leftList {
+  width: 50%;
+  float: left;
+  margin-top: 25px;
+}
+div.wrapper section.main div.mainContent div.leftColumn.mainText div.rightList {
+  width: 50%;
+  float: left;
+  margin-top: 25px;
+}
+div.wrapper section.main div.mainContent div.rightColumn.image {
+  width: 30%;
+  float: right;
+}
+div.wrapper section.main div.mainContent div.rightColumn.image img {
+  width: 100%;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  border: 1px solid #333333;
+}
+div.wrapper section.main div.mainContent div.leftColumn.threeCol {
+  width: 40%;
+  float: left;
+  margin-left: 8%;
+}
+div.wrapper section.main div.mainContent div.leftColumn.threeCol h3 {
+  margin-top: 0;
+}
+div.wrapper section.main div.mainContent div.rightColumn.threeCol {
+  width: 40%;
+  float: right;
+  margin-right: 8%;
+  overflow: hidden;
+}
+div.wrapper section.main div.mainContent div.rightColumn.threeCol h3 {
+  margin-top: 0;
+}
+div.wrapper section.main div.mainContent div.rightColumn.threeCol h4 {
+  margin: 0px;
+}
+div.wrapper section.main div.mainContent div.rightColumn.threeCol div.socialLinks {
+  overflow: hidden;
+}
+div.wrapper section.main div.mainContent div.rightColumn.threeCol div.socialLinks a {
+  float: left;
+  width: 12.5%;
+  height: 100%;
+}
+div.wrapper section.main div.mainContent div.rightColumn.threeCol div.socialLinks a img {
+  width: 100%;
+  border-radius: 5px;
+}
+div.wrapper section.main div.mainContent div.rightColumn.threeCol div.socialLinks div.links {
+  float: left;
+  margin-left: 1%;
+  margin-bottom: 50px;
+  width: 80%;
+}
+div.wrapper section.main div.mainContent div.rightColumn.threeCol div.socialLinks div.links a {
+  width: 100%;
+}
+div.wrapper section.main div.mainContent div.detailContent {
+  width: 80%;
+  margin: auto;
+}
+div.wrapper section.main div.mainContent div.detailHero {
+  font-size: 0px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  border: 1px solid #333333;
+}
+div.wrapper section.main div.mainContent div.detailHero img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+div.wrapper section.main div.detailsWhole {
+  border: 1px solid black;
+  margin: 25px 0;
+  overflow: hidden;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  border: 1px solid #333333;
+}
+div.wrapper section.main div.detailsWhole div.detailsImageLeft {
+  background-color: #333333;
+}
+div.wrapper section.main div.detailsWhole div.detailsImageLeft img {
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+  border-right: solid 1px black;
+  width: 20%;
+  height: auto;
+  float: left;
+}
+div.wrapper section.main div.detailsWhole div.detailsImageRight {
+  float: right;
+  width: 20%;
+}
+div.wrapper section.main div.detailsWhole div.detailsImageRight img {
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+  border-left: solid 1px black;
+  width: 100%;
+  height: auto;
+  float: right;
+}
+div.wrapper section.main div.detailsWhole div.details {
+  float: left;
+  margin-left: 1%;
+  width: 78%;
+}
+div.wrapper section.main div.detailsWhole div.details h3 {
+  margin-top: 10px;
+}
+div.wrapper section.main aside#mainSidebar {
+  width: 25%;
+  float: right;
+  border-radius: 15px;
+  padding: 1%;
+  background-color: #0597cc;
+}
+div.wrapper section.main aside#mainSidebar li {
+  list-style: none;
+}
+div.wrapper section.main aside#mainSidebar ul {
+  padding: 0;
+}
+div.wrapper section.main aside#mainSidebar a {
+  color: #333333;
+}
+div.wrapper section.main div.blogContent {
+  width: 70%;
+  float: left;
+}
+div.wrapper section.main div.blogContent h1.theTitle {
+  margin-top: 0;
+}
+div.wrapper section.main div.blogContent article {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  border: 1px solid #333333;
+  padding: 1%;
+  margin-bottom: 25px;
+}
+div.wrapper section.main div.blogPost {
+  width: 70%;
+  float: left;
+}
+div.wrapper section.main div.blogPost h1.theTitle {
+  margin-top: 0;
+}
+div.wrapper section.main div.blogPost img {
+  max-width: 100%;
+  height: auto;
+}
+div.wrapper section.main ul#menu-blog {
+  list-style: none;
+  padding: 0;
+  background-color: #0597cc;
+  border-radius: 10px;
+  padding: 5px;
+}
+div.wrapper section.main ul#menu-blog li {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 3px;
+}
+div.wrapper section.main ul#menu-blog li a {
+  color: white;
+  text-decoration: none;
+  padding: 3px;
+  transition: all 0.3s;
+  border-radius: 10px;
+  padding-right: 5px;
+}
+div.wrapper section.main ul#menu-blog li a:hover {
+  color: #0597cc;
+  padding-left: 15px;
+  background-color: white;
+}
+footer {
+  text-align: center;
+  font-size: 14px;
+}
+footer p#quotes {
+  width: 320px;
+  margin: auto;
+  font-size: 10px;
+  padding-bottom: 15px;
+}
+footer div.social {
+  width: 100%;
+}
+footer div.social a img {
+  width: 45px;
+  display: inline-block;
+  border-radius: 5px;
+  margin-left: 15px;
+  transition: all 0.2s;
+}
+footer div.social a:hover img {
+  margin-bottom: -5px;
+}
+.mobileOnly {
+  display: none;
+}
+.alignleft {
+  float: left;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  border: 1px solid #333333;
+}
+.alignright {
+  float: right;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  border: 1px solid #333333;
+}
+@media only screen and (max-width: 1150px) {
+  div.wrapper {
+    padding: 15px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  div.wrapper {
+    padding: 15px;
+  }
+  div.wrapper header.mainHeader nav#mainNav {
+    width: 100%;
+    text-align: center;
+    position: static;
+    padding-top: 20px;
+  }
+  div.wrapper header.mainHeader nav#mainNav div.menu-menu-1-container ul li {
+    margin: 5px;
+    padding: 5px;
+  }
+  div.wrapper section.main div.bannerBlack {
+    width: 100%;
+    border: solid 10px #333333;
+    margin-top: 25px;
+  }
+  div.wrapper section.main div.bannerBlack div.bannerBlue {
+    width: 100%;
+    border: solid 10px #0597cc;
+  }
+  div.wrapper section.main div.bannerBlack div.bannerBlue div.bannerBlack2 {
+    width: 100%;
+    border: solid 10px #333333;
+    text-align: center;
+    padding: 15px 5px;
+  }
+  div.wrapper section.main div.bannerBlack div.bannerBlue div.bannerBlack2 h2 {
+    font-weight: 300;
+    font-size: 32px;
+  }
+  div.wrapper section.main div.bannerBlack div.bannerBlue div.bannerBlack2 h2 span {
+    font-weight: 600;
+  }
+  div.wrapper section.main div.blog {
+    width: 100%;
+    margin: 0;
+    margin-top: 25px;
+    float: none;
+    border: 1px solid #333333;
+    padding: 10px;
+  }
+  div.wrapper section.main div.twitter {
+    width: 100%;
+    margin: 0;
+    margin-top: 25px;
+    float: none;
+    text-align: center;
+  }
+  div.wrapper section.main div.mainContent div.leftColumn.mainText {
+    width: 100%;
+  }
+  div.wrapper section.main div.mainContent div.rightColumn.image {
+    display: none;
+  }
+  div.wrapper section.main div.mainContent div.leftColumn.threeCol {
+    width: 100%;
+    margin-left: 0;
+  }
+  div.wrapper section.main div.mainContent div.rightColumn.threeCol {
+    width: 100%;
+    margin-right: 0;
+  }
+  div.wrapper section.main div.detailsWhole div.detailsImageLeft,
+  div.wrapper section.main div.detailsWhole div.detailsImageRight {
+    width: 30%;
+  }
+  div.wrapper section.main div.detailsWhole div.detailsImageLeft img,
+  div.wrapper section.main div.detailsWhole div.detailsImageRight img {
+    width: 100%;
+  }
+  div.wrapper section.main div.detailsWhole div.details {
+    width: 68%;
+  }
+  div.wrapper section.main div.detailsWhole div.details h3 {
+    font-size: 18px;
+  }
+  div.wrapper section.main div.detailsWhole div.details p {
+    font-size: 14px;
+  }
+  div.wrapper section.main ul.mobileMenu {
+    display: block;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  div.wrapper section.main ul.mobileMenu li {
+    display: inline-block;
+    width: 49%;
+    background-color: #0597cc;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 10px;
+  }
+  div.wrapper section.main ul.mobileMenu li a {
+    color: white;
+    text-decoration: none;
+  }
+  div.wrapper section.main div.menu-blog-container {
+    display: none;
+    text-align: center;
+  }
+  div.wrapper section.main aside#mainSidebar {
+    display: none;
+    position: absolute;
+    right: 15px;
+    width: 50%;
+  }
+  div.wrapper section.main div.blogContent {
+    width: 100%;
+  }
+  div.wrapper section.main div.blogPost {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  div.wrapper section.main div.detailsWhole div.detailsImageLeft,
+  div.wrapper section.main div.detailsWhole div.detailsImageRight {
+    width: 40%;
+  }
+  div.wrapper section.main div.detailsWhole div.details {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .mobileOnly {
+    display: block;
+  }
+  img.navButton {
+    width: 44px;
+    float: right;
+    margin-top: 25px;
+  }
+  div.wrapper header.mainHeader {
+    padding: 0 15px;
+    overflow: hidden;
+  }
+  div.wrapper header.mainHeader div.social {
+    display: none;
+  }
+  div.wrapper header.mainHeader div.social a:hover img {
+    margin-bottom: -5px;
+  }
+  div.wrapper header.mainHeader nav#mainNav {
+    display: none;
+    width: 100%;
+    float: none;
+    text-align: center;
+    vertical-align: auto;
+    position: static;
+    margin-bottom: 0px;
+    padding-top: 15px;
+    clear: both;
+  }
+  div.wrapper header.mainHeader nav#mainNav div.menu-menu-1-container ul {
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+  }
+  div.wrapper header.mainHeader nav#mainNav div.menu-menu-1-container ul li.menu-item {
+    display: block;
+    padding: 10px 0;
+  }
+  div.wrapper section.main div.mainContent div.leftColumn.mainText div.leftList,
+  div.wrapper section.main div.mainContent div.leftColumn.mainText div.RightList {
+    float: none;
+    width: 100%;
+  }
+  div.wrapper section.main div.detailsWhole {
+    padding: 10px;
+  }
+  div.wrapper section.main div.detailsWhole div.detailsImageLeft,
+  div.wrapper section.main div.detailsWhole div.detailsImageRight {
+    display: none;
+  }
+  div.wrapper section.main div.detailsWhole div.details {
+    width: 100%;
+  }
+  div.wrapper section.main div.detailsWhole div.details p {
+    font-size: 16px;
+  }
+  div.wrapper section.main div.menu-blog-container {
+    display: none;
+    text-align: center;
+  }
+  div.wrapper section.main div.menu-blog-container ul#menu-blog li.menu-item {
+    text-align: center;
+    display: block;
+    padding: 10px 0;
+  }
+  div.wrapper section.main div.menu-blog-container ul#menu-blog li.menu-item a {
+    font-size: 18px;
+  }
+  div.wrapper section.main aside#mainSidebar {
+    width: 94%;
+  }
+  .alignleft {
+    width: 50%;
+    height: auto;
+    margin: auto;
+  }
+  .alignright {
+    width: 50%;
+    height: auto;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .alignleft {
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+  .alignright {
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+  }
+}
